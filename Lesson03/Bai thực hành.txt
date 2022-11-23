@@ -1,0 +1,21 @@
+// Bài thực hành
+
+- Tạo đối tượng person trong App.js
+person = {
+	id:1000,
+	firstName:"Chung",
+	lastName:"Trịnh",
+	age:40,
+	company:"Devmaster Academy",
+	avatar:"chung.png"
+}
+- Tạo component: Avatar.js 
+return => hiển thị hình ảnh
+
+- Tạo component: MemberInfo 
+	+ Sử dụng component avatar 
+	+ Hiển thị các thông tin person 
+	
+- Trong component App.js 
+	+ Sử dụng MemberInfo
+--> 20'
