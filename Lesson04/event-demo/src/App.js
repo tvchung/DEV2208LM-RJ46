@@ -2,6 +2,8 @@ import './App.css';
 import {React, Component} from "react";
 import EventProps from './components/EventProps';
 import FromControlled from './components/FromControlled';
+import LoginControl from './components/LoginContol';
+import ListKeyDemo from './components/ListKeyDemo';
 class App extends Component {
 
   // function
@@ -33,6 +35,11 @@ class App extends Component {
         <EventProps name1="Devmaster Academy" />
         <h2>Form Controlled</h2>
         <FromControlled />
+
+        <hr/>
+        <LoginControl />
+        <hr/>
+        <ListKeyDemo />
       </div>
     );
   }
