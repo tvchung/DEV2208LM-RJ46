@@ -4,12 +4,23 @@ import Student from './Student';
 class ListStudent extends Component{
 
 
+    // Xem thông tin
+    handleView=(toggle, actionName, student)=>{
+      console.log(student);
+      this.props.handleView(toggle, actionName, student);
+    }
+
+    handleEdit = (toggle,actionName,student)=>{
+      this.props.handleEdit(toggle,actionName,student);
+    }
     render(){
         // let students = this.props.students;
         let {students} = this.props;
         let elementStudent = students.map((student,index)=>{
             return(
-                <Student key={index} student = {student} stt={index+1} />
+                <Student key={index} student = {student} stt={index+1} 
+                  handleView={this.handleView} 
+                  handleEdit ={this.handleEdit}/>
             )
         });
         return(

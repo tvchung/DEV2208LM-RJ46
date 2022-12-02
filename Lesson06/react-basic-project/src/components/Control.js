@@ -2,6 +2,11 @@ import { React, Component } from "react";
 
 class Control extends Component {
   
+
+  // click thêm mới sinh viên
+  handleAddStudent =()=>{
+    this.props.handleAdd(true, "AddNew");
+  }
   render() {
     return (
       <div className="card-header">
@@ -10,7 +15,7 @@ class Control extends Component {
             <button
               type="button"
               className="btn btn-primary btn-icon-text"
-              
+              onClick={this.handleAddStudent}
             >
               Thêm mới sinh viên
             </button>
