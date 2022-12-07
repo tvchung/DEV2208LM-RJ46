@@ -1,0 +1,8 @@
+Sửu dụng cấu trúc dữ liệu 
+
+products = [
+    {pId:"P001",productName:"IPhone 11",image:"iphone11.jpg",qty:20,price:1000},
+    {pId:"P002",productName:"IPhone 12",image:"iphone12.jpg",qty:25,price:1200},
+    {pId:"P003",productName:"IPhone 13",image:"iphone13.jpg",qty:15,price:1400},
+    {pId:"P004",productName:"IPhone 14",image:"iphone14.jpg",qty:30,price:1800},
+]
