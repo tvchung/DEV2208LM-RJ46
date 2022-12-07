@@ -71,6 +71,7 @@ class FormControl extends Component {
       let {actionName} = this.props;
       console.log(actionName);
       if(actionName === "AddNew"){
+        console.log(this.state);
         this.props.AddNewStudent(this.state)
       }
       // this.props.handleClose(false,"");
