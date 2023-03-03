@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#zone1{
+    display: block;
+    background-color: #ccc;
+    width: 100vw;
+    height: 100vh;
+}
+#zone1 .container{
+    background-color: #fff;
+
+}
+#zone1 h1 strong, #zone1 h1 small{
+    font-size: 1.5rem;
+    color: blue;
+}
+#zone1 h3{
+    margin-bottom: 0 !important;
+}
+#zone1 tbody button{
+    border-radius: 0 !important;
+}
+#zone1 .form button{
+    border-radius: 0 !important;
+    min-width: 7rem;
+}
+#zone1 tbody tr td {
+   vertical-align: middle !important;
+}
+#zone1 tbody tr td > sup{
+    color:#dc3545;
+    font-weight: bold;
+}
+.input-group, .input-group-text, .form-control{
+    border-radius: 0 !important;
+}
+.form-control:focus{
+    box-shadow: none !important;
+}
+.alert{
+    border-radius: 0;
+}

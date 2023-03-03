@@ -1,0 +1,66 @@
+-- Mini Project 3 - TodoList (React Hook)
+1. Create project (ReatJs)
+2. Phân tích giao diện, xây dựng các function component
+	- Chuyển thiết kế sang JSX
+	- Đưa các mã nguồn vào các function component
+3. Các chức năng của TodoList
+3.1: Chức năng show list task
+	- App:
+		+ Tạo mock data: list task
+		+ App ---> list tasl ---> ListTask
+	- ListTask: show data --> Task
+3.2: Chức năng toggle form
+	- App:
+		+ Tạo state isToggle điều khiển ẩn/hiện form 
+	- Control:
+		+ click button add task: Control --> Update isToggle --> App 
+	- Form: 
+		+ click button submit: Form -> Update isToggle --> App 
+3.3: Chức năng search
+	- Control: 
+		+ Nhập dữ liệu search --> Click button Go
+		+ Gửi dữ liệu search từ Control --> App 
+	- App:
+		+ Thực hiện search (state: listTask)
+		+ re-render ListTask Component
+3.4: Chức năng sort
+	- Control:
+		+ Chọn kiểu sắp xếp
+		+ Gửi dữ liệu săp xếp từ Control --> App 
+	- App:
+		+ Thực hiện săp xếp (state: listTask)
+		+ re-render ListTask Component
+3.5: Chức năng thêm một task 
+	- Form:
+		+ Nhập dữ liệu Task 
+		+ Click button Submit:
+			+ Gửi liệu Task từ Form --> App 
+	- App:
+		+ Thêm Task vào listTask
+		+ re-render ListTask Component
+3.6: Chức năng edit task 
+	- Task:
+		+ click button edit 
+		+ chuyển dữ liệu task từ Task Component --> Form (Nên chuyển id) 
+	- Form: 
+		+ Hiển thị thông tin task lên form 
+		+ Cho phép người dùng sửa (Tên, level,...)
+		+ click button submit -> Gửi dữ liệu cập nhật --> App
+	- App:
+		+ Nhập dữ liệu 
+		+ Cập nhật listTask
+		+ re-render ListTask Component
+3.7: Chức năng delete task 
+	- Task:
+		+ click button Delete
+		+ Chuyển taskId từ Task component --> App 
+	- App:
+		+ xóa task trong listTask theo taskId
+		+ re-render ListTask component
+	
+
+
+
+
+
+	
